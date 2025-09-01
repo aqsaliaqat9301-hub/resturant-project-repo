@@ -1,0 +1,135 @@
+body {
+  background: #6a6edb;
+  font-family: sans-serif;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+}
+
+.game-container {
+  border-radius: 20px;
+
+  
+  background-color: #7e81cc;
+  width: 400px;
+  margin: 32px auto;
+  text-align: center;
+  border: 1px solid rgb(88, 66, 110);
+  box-shadow: 0 0 10px rgb(53, 44, 75);
+  padding: 30px;
+}
+
+h1 {
+  font-family: "Permanent Marker", cursive;
+  font-size: 3rem;
+}
+
+.cell {
+  width: 80px;
+  height: 80px;
+  background-color: #f0f0f0;
+  color: rgb(133, 81, 182);
+  font-size: 3rem;
+  font-weight: bold;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+  border: 1px solid rgb(75, 29, 82);
+  box-shadow: 0 0 10px rgb(53, 44, 75);
+}
+
+
+
+.new-game-btn {
+  width: 120px;
+  background-color: rgb(255, 255, 255);
+  color: #6a6edb;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 22px;
+  padding: 12px;
+  border: none;
+  font-weight: bolder;
+
+}
+
+.status {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  border: 1px solid rgb(133, 81, 182);
+  box-shadow: 0 0 10px rgb(53, 44, 75);
+  border-radius: 20px;
+  background-color: rgb(53, 44, 75);
+  padding: 30px;
+
+}
+
+.score-board {
+  border: 1px solid #6a6edb;;
+  box-shadow: 0 0 10px rgb(45, 35, 63);
+  border-radius: 20px;
+  background-color: rgb(75, 29, 82);
+  padding: 30px;
+  display: inline-flex;
+  justify-content: space-between;
+  gap: 22px;
+}
+
+.score-board p {
+  margin: 5px 0;
+  font-size: 1rem;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 80px);
+  gap: 10px;
+  justify-content: center;
+  margin: 20px 0;
+
+}
+
+/* Modal Styling */
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  color: rgb(133, 81, 182);
+  box-shadow: 0 0 20px #000000;
+
+}
+
+.modal-content h2 {
+  margin-bottom: 20px;
+}
+
+.modal-content button {
+  background: #fff;
+  border: none;
+  color: rgb(80, 28, 95);
+  border: 2px solid rgb(69, 47, 97);
+  padding: 10px 25px;
+  border-radius: 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: bolder;
+
+}
+
